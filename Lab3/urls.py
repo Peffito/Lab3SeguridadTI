@@ -18,5 +18,6 @@ from userauth import views
 
 urlpatterns = [
     path('login/', views.login_view, name='login'),
+    path('success_page/', views.success_page, name='success'),
     # Add more URL patterns as needed
 ]

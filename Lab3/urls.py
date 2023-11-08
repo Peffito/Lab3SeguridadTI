@@ -18,6 +18,10 @@ from userauth import views
 
 urlpatterns = [
     path('login/', views.login_view, name='login'),
+<<<<<<< HEAD
     path('success/', views.success_page, name='success_page'),
+=======
+    path('success_page/', views.success_page, name='success'),
+>>>>>>> refs/remotes/origin/master
     # Add more URL patterns as needed
 ]

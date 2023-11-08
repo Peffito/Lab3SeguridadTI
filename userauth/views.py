@@ -16,16 +16,10 @@ def login_view(request):
         	if (("Christoph Molnar" in username) and SQLI.sql_injection_check(query)):
         		#login(request, username)
         		redirect('success_page')  # Redirect to a success page
-<<<<<<< HEAD
-<<<<<<< HEAD
         	elif (username == "test" and password == "test"):
 	                return redirect('success_page')   
 	        else:
 	       	        return HttpResponse("El inicio de sesiòn ha fracasado.")	
-=======
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> origin/master
         else:
             # Handle invalid login
             return HttpResponse("El inicio de sesiòn ha fracasado.")

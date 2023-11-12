@@ -4,14 +4,13 @@ def sql_injection_check(query):
     # Common SQL injection patterns and keywords
     patterns = [
         r'\bUNION\b',
-        r'\bSELECT\b',
+#        r'\bSELECT\b',
         r'\bINSERT\b',
         r'\bUPDATE\b',
         r'\bDELETE\b',
         r'\bDROP\b',
-        r'\b OR \b',
+        r'\bOR\b',
         r'\b1=1\b',
-        r'\b--\s',
     ]
 
     for pattern in patterns:
